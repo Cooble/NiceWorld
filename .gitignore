@@ -1,0 +1,8 @@
+# Directories
+out/
+NiceWorldResources/
+resources/
+
+# Files
+*.class
+Reflections.zip

@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="lwjgl">
+    <CLASSES>
+      <root url="jar://D:/Dev/Java/Libraries/slick/lib/lwjgl.jar!/" />
+      <root url="jar://D:/Dev/Java/Libraries/slick/lib/slick.jar!/" />
+      <root url="jar://D:/Dev/Java/Libraries/slick/lib/slick-examples.jar!/" />
+      <root url="jar://D:/Dev/Java/Libraries/slick/lib/jogg-0.0.7.jar!/" />
+      <root url="jar://D:/Dev/Java/Libraries/slick/lib/jorbis-0.0.15.jar!/" />
+      <root url="jar://D:/Dev/Java/Libraries/slick/lib/jinput.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="jar://D:/Dev/Java/Libraries/slick/lib/natives-windows.jar!/" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>
