@@ -1,0 +1,156 @@
+#head{
+
+    height: 100px;
+    background-color: #3c3c3c;
+    color: white;
+    padding: 0;
+    margin: 0;
+
+}
+#head h1{
+    text-align: center;
+    color: white;
+    width: inherit;
+    line-height: 100px;
+}
+.login_form{
+
+    color: #000026;
+    text-decoration-color: #000322;
+
+    display: block;
+    margin: auto;
+
+}
+.pointy {
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+}
+.warning{
+    border: solid 2px #ff0100;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.login_form_input{
+
+   width: 100px;
+}
+.login_button {
+    background-color: #5185af;
+    border: solid 2px black;
+    color: white;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+.wanderer {
+    max-width:100%;
+    height:auto;
+    padding: 10px;
+}
+#register_form{
+    color: green;
+    text-decoration-color: green;
+}
+.register_form_child{
+     color: black
+     text-decoration-color: green;
+     margin: 5px;
+     padding: 5px;
+     width: 100%;
+     height: 2em;
+     text-align: left;
+ }
+.register_form_child_btn{
+    vertical-align: middle;
+    height: 2em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.message{
+    text-align: center;
+    color: red;
+    font-family: serif;
+    font-size: 36px;
+}
+.chat_message{
+    margin: 2px;
+    color: black;
+    font-family: serif;
+    font-size: 14px;
+    border: 1px solid #989898;
+}
+.chat_username{
+    color: #8080ff;
+    font-style:normal;
+    font-size: 14px;
+    font-weight: bold;
+}
+.chat_time{
+    color: #9f9fff;
+    font-style:normal;
+    font-size: 10px;
+}
+.scrollable {
+    height: 300px; /* or any value */
+    overflow-y: auto;
+    border: solid 2px #989898;
+}
+.cookie_alert
+{
+    position: absolute ;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    color: white;
+    text-decoration-color: aliceblue;
+    background-color: red;
+    text-align: center;
+}
+.cookie_child
+{
+    align-items: center;
+    position: relative;
+    text-decoration-color: aliceblue;
+}
+.boxik{
+     border: solid 4px black;
+     margin: 5px;
+     padding: 5px;
+ }
+.boxik2{
+    border: solid 2px #989898;
+    margin: 5px;
+    padding: 5px;
+}
+#chat_group_title{
+    font-weight: bold;
+    font-size: 18px;
+}
+.likebox{
+    float: right;
+    margin: 5px;
+    width: 18px;
+    height: 18px;
+}
+
+.like_button{
+    background: url(like.png);
+    width:16px;
+    height:16px;
+    border: none;
+}
+.like_button_blank{
+    background: url(like_blank.png);
+    width:16px;
+    height:16px;
+    border: none;
+}

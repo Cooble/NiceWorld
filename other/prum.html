@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Průměr</title>
+        <style>
+            #calDiv{
+                width: 300px;
+                border-radius: 5px;
+                height: 290px;
+                margin: auto;
+                background-color: #aa4f4f;
+                box-shadow: 0px 0px 2px black;
+                border-color: black;
+                outline: none;
+
+            }
+            #disDiv{
+                width: 300px;
+                outline: none;
+            }
+            #display{
+                width: 270px;
+                margin: 10px;
+                text-align: center;
+                font-size: 3em;
+                padding: 3px;
+                background-color: black;
+                color: aqua;
+                text-shadow: 0px 0px 3px white;
+                user-select: none;
+                outline: none;
+
+            }
+            .btn{
+                width: 80px;
+                height: 80px;
+                font-size: 60px;
+                margin: 10px;
+                border-radius: 10px;
+                background-color: #2b296c;
+                border-color: white;
+                text-shadow: 1px 1px 1px black;
+                box-shadow: 5px 5px 2px;  
+                outline: none;
+            }
+            .btn:hover{
+                background-color: #4c4b72;
+                transition: 0.05s;
+            }
+            .btn:active{
+                background-color: #4c4b72;
+                transition: 0.05s;
+                border-color: black;
+                box-shadow: 1px 1px 2px;  
+            }
+        </style>
+        <script>
+            const chars="12345C";
+            var currentSize=0;
+            var currentVal=0;
+            function onBtnClick(char){
+                if(char=="C"){
+                    currentSize=0;
+                    currentVal=0;
+                } 
+                else {
+                    currentVal = (currentSize*currentVal+parseInt(char))/(currentSize+1);
+                    currentSize++;
+                } 
+
+                display.setAttribute("value",Number(currentVal).toFixed(2));
+            } 
+            function onLoaded(){
+                for (let i=0;i<chars.length;i++){
+                    let button = document.createElement("input");
+                    button.setAttribute("type","button");
+                    button.setAttribute("value",chars[i]);
+                    button.setAttribute("class","btn");
+                    button.setAttribute("onclick","onBtnClick(this.value);");
+                    btnDiv.appendChild(button);
+                }
+
+                display.setAttribute("readonly", "true");
+            }
+        </script>
+    </head>
+    <body onload="onLoaded();onBtnClick('C');">
+        <div id="calDiv">
+            <div id="disDiv">
+                <input type="text" id="display">
+            </div>
+            <div id="btnDiv">
+            </div>
+        </div>
+    </body>
+</html>
